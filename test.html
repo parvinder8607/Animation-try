@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Snake Animation</title>
+  
+</head>
+<style>
+    /* Global styles */
+/* Global styles */
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f0f0f0;
+}
+
+.snake {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  position: relative;
+}
+
+.snake-body {
+  width: 30px;
+  height: 30px;
+  background-color: green;
+  border-radius: 50%;
+  margin-right: 5px;
+  animation: snakeSwing 0.8s ease-in-out infinite alternate;
+}
+
+/* Snake swinging animation */
+@keyframes snakeSwing {
+  0% {
+    transform: rotate(10deg);
+  }
+  25% {
+    transform: rotate(-10deg);
+  }
+  50% {
+    transform: rotate(10deg);
+  }
+  75% {
+    transform: rotate(-10deg);
+  }
+  100% {
+    transform: rotate(10deg);
+  }
+}
+
+
+</style>
+<body>
+  <div class="snake">
+    <div class="snake-body"></div>
+    <div class="snake-body"></div>
+    <div class="snake-body"></div>
+    <div class="snake-body"></div>
+  </div>
+</body>
+</html>

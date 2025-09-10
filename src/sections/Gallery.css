@@ -1,0 +1,23 @@
+/* Gallery.css */
+.gallery-container {
+    width: 100%;
+    overflow: hidden;
+  }
+  
+  .gallery {
+    display: flex;
+    overflow-x: scroll;
+    scroll-behavior: smooth; /* Smooth scroll */
+    padding: 10px 0;
+  }
+  
+  .image-item {
+    margin-right: 16px;
+  }
+  
+  .image-item img {
+    width: 300px;
+    height: 200px;
+    border-radius: 8px;
+  }
+  

@@ -1,0 +1,124 @@
+@import "tailwindcss";
+
+/* Add this in your CSS or within the style tag of your component */
+@theme{
+  --font-display: 'Noto Sans Hanunoo', serif;
+}
+
+html {
+
+  scroll-behavior: smooth;
+}
+
+body{
+ 
+  background-color: #000;
+  color: #fff;
+  
+}
+
+
+@keyframes fireBall {
+  0% {
+    bottom: 0;
+  }
+  100% {
+    bottom: 100vh;  /* Ball moves all the way to the top of the screen */
+  }
+}
+
+.ball {
+  animation: fireBall 3s linear forwards;  /* Adjust speed here */
+}
+
+.ball:nth-child(even) {
+  animation-delay: 0.3s; /* Slight delay for each subsequent ball */
+}
+
+
+
+
+.moving-animation {
+    animation: scaleAnimation 0.5s ease-out forwards;
+  }
+  
+  @keyframes scaleAnimation {
+    0% {
+      transform: translateY(0px);
+    }
+    50% {
+      transform: translateY(-100%); /* translateY to 1.5 times its size */
+    }
+    100% {
+      transform: translateY(0px); /* Return to original size */
+    }
+  }
+  
+  .reflect{
+    position: relative;
+    font-size:6em;
+    color:#fff;
+    letter-spacing: 20px;
+    text-transform: uppercase;
+    width:100%;
+    text-align:center;
+    -webkit-box-reflect: below 1px linear-gradient(transparent, #eeade5);
+    line-height:0.7em;
+    outline:none;
+    /* animation :animate 5s linear infinite; */
+  }
+
+
+  .text-background {
+    background-image: linear-gradient(to right, red, blue); /* Gradient from red to blue */
+    background-clip: text;
+    -webkit-background-clip: text; /* Make the background visible only on text */
+    color: transparent; /* Make the text color transparent to show the background */
+  
+    font-weight: bold;
+  }
+  
+  body {
+    background-color: #f2f2f2;
+  }
+
+  #three-canvas-container{
+    height: 100vh !important;
+   
+
+  }
+
+
+ 
+  
+  .section {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 1.5rem 2rem;
+    border-radius: 12px;
+    backdrop-filter: blur(10px);
+    width: 300px;
+    text-align: center;
+  }
+  
+
+  .box{
+    background-color: rgba(105, 114, 231);
+    padding: 1.5rem 2rem;
+    border-radius: 12px;
+    backdrop-filter: blur(10px);
+    aspect-ratio: 1/1;
+    width: 100px;
+    height: 100px;
+    text-align: center;
+  }
+  .newbox{
+    background-color: rgba(105, 114, 231);
+    padding: 1.5rem 2rem;
+    border-radius: 12px;
+    backdrop-filter: blur(10px);
+    aspect-ratio: 1/1;
+    
+    text-align: center;
+  }
+
+  
